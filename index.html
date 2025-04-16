@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-      body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-      .w3-row-padding img {margin-bottom: 12px; width: 100%; height: auto;} /* Ensures images are responsive */
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
+      .w3-row-padding img {margin-bottom: 12px; width: 100%; height: auto;}
       .w3-sidebar {width: 120px;background: #222;}
-      #main {margin-left: 120px}
-      @media only screen and (max-width: 600px) {#main {margin-left: 0}} /* Sidebar collapses for small screens */
+      #main {margin-left: 120px;}
       
-      /* Stack images vertically all the time */
+      /* Default (Desktop) Font Sizes */
+      h1, h2, h3, h4, h5, h6 {
+        font-size: 2em;
+        line-height: 1.3;
+      }
+
       .w3-row-padding {
         display: block;
       }
@@ -30,121 +34,156 @@
         text-align: center;
         margin-top: 10px;
       }
+
+      /* Mobile-Friendly Adjustments */
+      @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 1.5em;  /* Smaller size for mobile */
+        }
+
+        h2 {
+          font-size: 1.25em;
+        }
+
+        h3 {
+          font-size: 1em;
+        }
+
+        .w3-row-padding img {
+          width: 100%;
+          height: auto;
+        }
+
+        /* Adjust Paragraphs */
+        p {
+          font-size: 1em;  /* Make text slightly smaller for mobile */
+        }
+
+        .w3-button {
+          font-size: 18px;  /* Adjust button size for mobile */
+        }
+        
+        .w3-sidebar {
+          width: 80px;  /* Make sidebar thinner on mobile */
+        }
+        
+        #main {
+          margin-left: 80px; /* Adjust content margin for smaller sidebar */
+        }
+      }
     </style>
   </head>
-<body class="w3-black">
+  <body class="w3-black">
 
-<!-- Sidebar Navigation -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <img src="https://i.imgur.com/FJJAUNe.png" style="width:100%">
-  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#socials" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-globe w3-xxlarge"></i>
-    <p>SOCIALS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-  <a href="#privacy" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-shield w3-xxlarge"></i>
-    <p>PRIVACY</p>
-  </a>
-  <a href="#terms" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-gavel w3-xxlarge"></i>
-    <p>TERMS</p>
-  </a>
-</nav>
+    <!-- Sidebar Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <img src="https://i.imgur.com/FJJAUNe.png" style="width:100%">
+      <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a href="#socials" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-globe w3-xxlarge"></i>
+        <p>SOCIALS</p>
+      </a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+      <a href="#privacy" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-shield w3-xxlarge"></i>
+        <p>PRIVACY</p>
+      </a>
+      <a href="#terms" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-gavel w3-xxlarge"></i>
+        <p>TERMS</p>
+      </a>
+    </nav>
 
-<!-- Main content -->
-<div class="w3-padding-large" id="main">
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">TRUE</span> MEDIAH.</h1>
-    <p>Empowering Africa through Media and Tech Innovation.</p>
-    <img src="https://i.imgur.com/Z9tyA1v.png" style="width: 100%; height: auto;">
-  </header>
+    <!-- Main content -->
+    <div class="w3-padding-large" id="main">
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo"><span class="w3-hide-small">TRUE</span> MEDIAH.</h1>
+        <p>Empowering Africa through Media and Tech Innovation.</p>
+        <img src="https://i.imgur.com/Z9tyA1v.png" style="width: 100%; height: auto;">
+      </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">About TRUE MEDIAH</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>TRUE MEDIAH is a multimedia and tech innovation company dedicated to building digital futures in Africa. We specialize in content creation, branding, live production, and integration, helping individuals and organizations communicate their value effectively in the digital space.</p>
-    <p>We believe in authenticity, creativity, and impact. Our team works with startups, artists, businesses, and public institutions to co-create meaningful digital experiences. From short-form video content to brand strategy and immersive tech solutions, TRUE MEDIAH operates at the intersection of storytelling and future-tech.</p>
-    <p>Our mission is to pioneer a new digital narrative for Africa—one that is inclusive, tech-forward, and true to our diverse voices and visions.</p>
-    
-    <!-- Empty Image Container Below About Section -->
-    <div class="w3-row-padding">
-      <div class="w3-col s12">
-        <img src="https://i.imgur.com/n3fQ4i1.png" alt="Empty Image" style="width:100%; height:auto;">
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">About TRUE MEDIAH</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>TRUE MEDIAH is a multimedia and tech innovation company dedicated to building digital futures in Africa. We specialize in content creation, branding, live production, and integration, helping individuals and organizations communicate their value effectively in the digital space.</p>
+        <p>We believe in authenticity, creativity, and impact. Our team works with startups, artists, businesses, and public institutions to co-create meaningful digital experiences. From short-form video content to brand strategy and immersive tech solutions, TRUE MEDIAH operates at the intersection of storytelling and future-tech.</p>
+        <p>Our mission is to pioneer a new digital narrative for Africa—one that is inclusive, tech-forward, and true to our diverse voices and visions.</p>
+        <div class="w3-row-padding">
+          <div class="w3-col s12">
+            <img src="https://i.imgur.com/n3fQ4i1.png" alt="About TRUE MEDIAH Image" style="width:100%; height:auto;">
+          </div>
+        </div>
       </div>
+
+      <!-- Socials Section -->
+      <div class="w3-content w3-padding-64" id="socials">
+        <h2 class="w3-text-light-grey">Check out our socials!</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <div class="w3-row-padding">
+          <div class="w3-col s12">
+            <img src="https://i.imgur.com/h1FmU1i.png" alt="Facebook">
+            <a href="https://www.facebook.com/share/mjJ8BY4JFBWY1TCT/?mibextid=qi2Omg" class="w3-button w3-hover-light-grey" target="_blank">Visit our FACEBOOK PAGE</a>
+          </div>
+          <div class="w3-col s12">
+            <img src="https://i.imgur.com/coppyKP.png" alt="YouTube">
+            <a href="https://www.youtube.com/channel/UCTwSPeu50v0CSfCJ7s94ndg" class="w3-button w3-hover-light-grey" target="_blank">Visit our YOUTUBE PAGE</a>
+          </div>
+          <div class="w3-col s12">
+            <img src="https://i.imgur.com/8fKIhTG.png" alt="SoundCloud">
+            <a href="https://soundcloud.com/true-mediah" class="w3-button w3-hover-light-grey" target="_blank">Visit our SOUNDCLOUD PAGE</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Contact Us</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Rustenburg, Northwest, South Africa</p>
+        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> (+27) 068 116 6077</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> truemediah@gmail.com</p>
+      </div>
+
+      <!-- Privacy Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="privacy">
+        <h2 class="w3-text-light-grey">Privacy Policy</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>We respect your privacy. All personal information collected through this site is used only for communication, support, and service delivery purposes. TRUE MEDIAH will never sell or share your personal information with third parties without consent.</p>
+        <p>We implement secure systems to protect your data and use cookies to enhance your browsing experience. By using our site, you agree to this policy.</p>
+      </div>
+
+      <!-- Terms Section -->
+      <div class="w3-padding-64 w3-content w3-text-grey" id="terms">
+        <h2 class="w3-text-light-grey">Terms of Service</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>By accessing this website and using our services, you agree to comply with all applicable South African laws and TRUE MEDIAH’s terms and policies. Any unauthorized reproduction, distribution, or commercial use of our intellectual property is strictly prohibited. Do not communicate or impersonate a member of our institution as this is punishable by prosecution by law. We reserve the right to select our clients based on our internal selection criteria.</p>
+        <p>We reserve the right to update or modify our terms at any time without prior notice. It is your responsibility to review these terms periodically.</p>
+      </div>
+
+      <!-- Footer -->
+      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        <div class="w3-small">
+          <a href="#home" class="w3-button w3-small w3-hover-light-grey">HOME</a> |
+          <a href="#about" class="w3-button w3-small w3-hover-light-grey">ABOUT</a> |
+          <a href="#socials" class="w3-button w3-small w3-hover-light-grey">SOCIALS</a> |
+          <a href="#contact" class="w3-button w3-small w3-hover-light-grey">CONTACT</a> |
+          <a href="#privacy" class="w3-button w3-small w3-hover-light-grey">PRIVACY</a> |
+          <a href="#terms" class="w3-button w3-small w3-hover-light-grey">TERMS</a>
+        </div>
+        <p class="w3-small w3-margin-top">&copy; 2025 TRUE MEDIAH. All rights reserved.<br>Designed by TRUE MEDIAH Group.</p>
+      </footer>
     </div>
-  </div>
 
-  <!-- Socials Section -->
-  <div class="w3-content w3-padding-64" id="socials">
-    <h2 class="w3-text-light-grey">Check out our socials!</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="w3-row-padding">
-      <div class="w3-col s12">
-        <img src="https://i.imgur.com/h1FmU1i.png" alt="Image 1">
-        <a href="https://www.facebook.com/share/mjJ8BY4JFBWY1TCT/?mibextid=qi2Omg" class="w3-button w3-hover-light-grey" target="_blank">Visit our FACEBOOK PAGE</a>
-      </div>
-      <div class="w3-col s12">
-        <img src="https://i.imgur.com/coppyKP.png" alt="Image 2">
-        <a href="https://www.youtube.com/channel/UCTwSPeu50v0CSfCJ7s94ndg" class="w3-button w3-hover-light-grey" target="_blank">Visit our YOUTUBE PAGE </a>
-      </div>
-      <div class="w3-col s12">
-        <img src="https://i.imgur.com/8fKIhTG.png" alt="Image 3">
-        <a href="https://soundcloud.com/true-mediah" class="w3-button w3-hover-light-grey" target="_blank">Visit our SOUNDCLOUD PAGE</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Us</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Rustenburg, Northwest, South Africa</p>
-    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> (+27) 068 116 6077</p>
-    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> truemediah@gmail.com</p>
-  </div>
-
-  <!-- Privacy Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="privacy">
-    <h2 class="w3-text-light-grey">Privacy Policy</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>We respect your privacy. All personal information collected through this site is used only for communication, support, and service delivery purposes. TRUE MEDIAH will never sell or share your personal information with third parties without consent.</p>
-    <p>We implement secure systems to protect your data and use cookies to enhance your browsing experience. By using our site, you agree to this policy.</p>
-  </div>
-
-  <!-- Terms Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="terms">
-    <h2 class="w3-text-light-grey">Terms of Service</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>By accessing this website and using our services, you agree to comply with all applicable South African laws and TRUE MEDIAH’s terms and policies. Any unauthorized reproduction, distribution, or commercial use of our intellectual property is strictly prohibited. Do not communicate or impersonate a member of our institution as this is punishable by prosecution by law. We reserve the right to select our clients based on our internal selection criteria. </p>
-    <p>We reserve the right to update or modify our terms at any time without prior notice. It is your responsibility to review these terms periodically.</p>
-  </div>
-
-  <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <div class="w3-small">
-      <a href="#home" class="w3-button w3-small w3-hover-light-grey">HOME</a> |
-      <a href="#about" class="w3-button w3-small w3-hover-light-grey">ABOUT</a> |
-      <a href="#socials" class="w3-button w3-small w3-hover-light-grey">SOCIALS</a> |
-      <a href="#contact" class="w3-button w3-small w3-hover-light-grey">CONTACT</a> |
-      <a href="#privacy" class="w3-button w3-small w3-hover-light-grey">PRIVACY</a> |
-      <a href="#terms" class="w3-button w3-small w3-hover-light-grey">TERMS</a>
-    </div>
-    <p class="w3-small w3-margin-top">&copy; 2025 TRUE MEDIAH. All rights reserved.</p>
-  </footer>
-</div>
-
-</body>
+  </body>
 </html>
